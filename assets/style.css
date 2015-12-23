@@ -1,0 +1,93 @@
+body { font-family: "Open Sans"; }
+.container { width: 980px; margin: 0 auto; padding: 20px; }
+
+/* File Upload  */
+#photo-preview {
+    width: 276px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    border: 2px solid #BBB; 
+    border-radius: 3px;
+    background-image: url('../images/upload-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+input#photo-upload {
+    line-height: 200px;
+    font-size: 200px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+#photo-label {
+    display: none;
+}
+#photo-preview:hover #photo-label {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #bdc3c7;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+	color: black;
+}
+
+/* Multi File Upload  */
+div[id^=photos-preview]{
+    width: 276px;
+    height: 250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    border: 2px solid #BBB; 
+    border-radius: 3px;
+    background-image: url('../images/upload-icon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+div[id^=photos-preview]:hover label[id^=photos-label] {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #bdc3c7;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+	color: black;
+}
+input[id^=photos-upload] {
+    line-height: 200px;
+    font-size: 200px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+label[id^=photos-label] {
+    display: none;
+}
